@@ -1,0 +1,11 @@
+S,A,B,C,D,E,F,G,N
+0,1,c,b,d,a
+S->cD|dF
+A->0S|1C
+B->aS|bC
+C->1S|dE
+E->0C
+D->1E|aG
+F->1E|aN
+G->cE|bN
+N->cE|bG
