@@ -499,6 +499,15 @@ int main()
             }
         }
     }
+    for(int i=0;i<from.size();i++){
+        for(int j=0;j<from.size();j++){
+            if(from[i]==from[j] && to[i]==to[j] && with[i]==with[j] && i!=j){
+                to.erase(to.begin()+j);
+                with.erase(with.begin()+j);
+                from.erase(from.begin()+j);
+            }
+        }
+    }
     /*for(int i=0; i<from.size();i++){
         for(int j=0; j<to.size();j++){
             if(to[i]==to[j] && with[i]==with[j] && from[i]!=from[j]){
