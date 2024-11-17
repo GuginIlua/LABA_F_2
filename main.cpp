@@ -475,6 +475,14 @@ int main()
         }
         flags=0;
     }
+    flags=0;
+    cout<<"Reachable points: "<<endl;
+    for(int i=0;i<rpoints.size();i++){
+        cout<<rpoints[i];
+        if(i!=rpoints.size()-1) cout<<",";
+    }
+    cout<<endl;
+    cout<<"Changes in points names:"<<endl;
     for(int i=0;i<from.size();i++){
         for(int j=0; j<to.size();j++){
             if(to[i]==to[j]&&with[i]==with[j]&&from[i]!=from[j]){
